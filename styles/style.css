@@ -257,8 +257,8 @@ button:hover {
 .content__list {
   display: flex;
   flex-direction: column;
-  max-height: 298px;
-  overflow-y: scroll;
+  height: 298px;
+  overflow-y: auto;
 }
 
 .content__list-item:not(:last-of-type) {
@@ -341,11 +341,11 @@ button:hover {
   background-color: #545050;
 }
 
- .error-template {
+ /* .error-template {
   width: 1,140px;
   height: 534px;
   top: 133px;
   left: 30px;
   gap: 30px;
   display: flex;
-}
+} */
