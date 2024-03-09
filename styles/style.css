@@ -278,8 +278,8 @@ button:hover {
 .content__card-link {
   display: block;
   color: #fff;
-  text-decoration: none;
   margin: 2px;
+  text-decoration: none;
 }
 
 .content__video-card {
@@ -291,7 +291,7 @@ button:hover {
   max-width: 200px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   overflow: hidden;
   padding: 2px;
 }
@@ -306,6 +306,8 @@ button:hover {
   text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 30px;
 }
 
 .content__video-card-description {
@@ -323,29 +325,27 @@ button:hover {
   object-position: center;
 }
 
-.content__card-link {
-  display: block;
-  padding: 2px;
-}
-
 .content__card-link:active {
   background-color: #545050;
 }
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 4px;
+}
+
+.content__card-link:focus {
+  text-decoration: none;
 }
 
 .content__card-link_current {
   background-color: #545050;
 }
 
-/* .error-template {
-  width: 1, 140px;
+ .error-template {
+  width: 1,140px;
   height: 534px;
   top: 133px;
   left: 30px;
   gap: 30px;
   display: flex;
-} */
+}
